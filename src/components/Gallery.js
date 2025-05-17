@@ -1,6 +1,5 @@
 import React from 'react';
-import Carousel from 'react-material-ui-carousel';
-import { Card, CardMedia, CardContent, Typography } from '@mui/material';
+import { Card, CardMedia, CardContent, Typography, ImageList, ImageListItem } from '@mui/material';
 
 const images = [
   {
@@ -26,16 +25,13 @@ const images = [
 ];
 
 const Gallery = () => (
-  <Carousel autoPlay={false} navButtonsAlwaysVisible>
+  <ImageList cols={3} gap={8} sx={{ width: '100%', height: 300 }}>
     {images.map((img, idx) => (
-      <Card key={idx} sx={{ maxWidth: 800, margin: '0 auto' }}>
-        <CardMedia component="img" height="400" image={img.url} alt={img.caption} />
-        <CardContent>
-          <Typography variant="subtitle1" align="center">{img.caption}</Typography>
-        </CardContent>
-      </Card>
+      <ImageListItem key={idx}>
+        <img src={img.url} alt={img.caption || `Gallery image ${idx + 1}`} loading="lazy" style={{ width: '100%', height: 'auto' }} />
+      </ImageListItem>
     ))}
-  </Carousel>
+  </ImageList>
 );
 
 export default Gallery;
