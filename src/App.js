@@ -239,27 +239,29 @@ function App() {
             Congratulations on your stunning new home at 125 Shore Dr. in Brick Township, New Jersey! This custom-built 4-bedroom, 3.5-bathroom waterfront masterpiece, built in 2020, offers breathtaking unobstructed bay views and luxurious living. This guide provides essential information about your new coastal community, from beaches and parks to restaurants and local services.
           </Typography>
 
-          {/* Award-winning new features start here */}
-          <Box sx={{ my: 4 }}>
-            <CrabbingSection />
-          </Box>
+          {/* Home Essentials: Most used features up front */}
           <Box sx={{ my: 4 }}>
             <WeatherWidget />
           </Box>
           <Box sx={{ my: 4 }}>
-            <Gallery />
-          </Box>
-          <Box sx={{ my: 4 }}>
             <Map />
-            {/* Reminder: Add your Google Maps API key in components/Map.js */}
+          </Box>
+          {/* Unique Local Experience */}
+          <Box sx={{ my: 4 }}>
+            <CrabbingSection />
+          </Box>
+          {/* Visual Gallery and Family Favorites */}
+          <Box sx={{ my: 4 }}>
+            <Gallery />
           </Box>
           <Box sx={{ my: 4 }}>
             <Favorites />
           </Box>
+          {/* Community & Memories */}
           <Box sx={{ my: 4 }}>
             <Guestbook />
           </Box>
-          {/* End award-winning features */}
+          {/* End home feature flow */}
 
           <Grid container spacing={3} sx={{ mb: 4 }}>
             <Grid item xs={12}>
