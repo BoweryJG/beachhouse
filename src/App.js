@@ -408,31 +408,112 @@ function App() {
 
         <TabPanel value={tabValue} index={2}>
           <Typography variant="h4" gutterBottom>
-            🍽️ Dining in Brick: Local Favorites & Waterfront Gems
+            🍽️ Dining in Brick: Zagat-Style Local Guide
           </Typography>
           <Typography paragraph>
-            Brick Township offers a diverse dining scene—enjoy everything from fresh seafood and waterfront views to classic Italian, hearty breakfasts, and family-friendly favorites. Here are some of the best spots, plus tips for every taste and occasion.
+            Welcome to your Zagat-style dining guide for Brick Township! Each capsule review below highlights cuisine, atmosphere, and what makes each spot memorable—so you can dine like a local, whether you're craving a sunset dinner or a family-friendly brunch.
           </Typography>
+
           <Box sx={{ my: 3 }}>
-            <Typography variant="h5" gutterBottom>Top Picks & Local Classics</Typography>
+            <Typography variant="h5" gutterBottom>Waterfront Wonders</Typography>
             <ul>
-              <li><strong>Beacon 70:</strong> Modern sports bar and grill on the water. Great for groups, outdoor seating, big menu, and lively vibe. <a href="https://www.yelp.com/biz/beacon-70-brick" target="_blank" rel="noopener">Yelp</a></li>
-              <li><strong>River Rock Restaurant & Marina Bar:</strong> Waterfront dining with a tiki bar, live music, and a big outdoor deck. <a href="https://www.tripadvisor.com/Restaurant_Review-g46321-d2316813-Reviews-River_Rock_Restaurant_and_Marina_Bar-Brick_New_Jersey.html" target="_blank" rel="noopener">TripAdvisor</a></li>
-              <li><strong>Harpoon Willy’s:</strong> Friendly, casual seafood with spectacular river views and live music. <a href="https://www.opentable.com/r/harpoon-willys-manahawkin" target="_blank" rel="noopener">OpenTable</a></li>
-              <li><strong>Cordi’s Italian Gourmet:</strong> Family-owned Italian, steak, and seafood—upscale atmosphere, gluten-free options. <a href="https://wanderlog.com/list/geoCategory/204544/where-to-eat-best-restaurants-in-brick" target="_blank" rel="noopener">See more</a></li>
-              <li><strong>Manera’s Restaurant:</strong> Local favorite for American fare, steaks, and seafood. <a href="https://www.yelp.com/biz/maneras-restaurant-brick" target="_blank" rel="noopener">Yelp</a></li>
-              <li><strong>The Brownstone Pancake Factory:</strong> Famous for creative pancakes, breakfast, and brunch. Fun for families! <a href="https://www.yelp.com/biz/the-brownstone-pancake-factory-brick" target="_blank" rel="noopener">Yelp</a></li>
-              <li><strong>Taylor Sam’s:</strong> Classic breakfast and lunch spot with a local vibe. <a href="https://www.yelp.com/biz/taylor-sams-brick" target="_blank" rel="noopener">Yelp</a></li>
-              <li><strong>Tacos Los Compas:</strong> Authentic Mexican, highly rated for takeout and casual dining. <a href="https://www.yelp.com/biz/tacos-los-compas-brick" target="_blank" rel="noopener">Yelp</a></li>
+              <li><strong>Beacon 70</strong> (American, Sports Bar): "A modern marina hangout with a sprawling menu and giant TVs—think burgers, sushi, and craft brews. The outdoor deck is a summer magnet for groups and boaters. <em>Best for: lively nights and water views.</em> <a href="https://www.yelp.com/biz/beacon-70-brick" target="_blank" rel="noopener">Yelp</a>"</li>
+              <li><strong>River Rock Restaurant & Marina Bar</strong> (American, Seafood): "Tiki bar energy meets classic Jersey Shore fun—live music, big portions, and a deck that’s always buzzing. <em>Best for: happy hour, sunsets, and casual family meals.</em> <a href="https://www.tripadvisor.com/Restaurant_Review-g46321-d2316813-Reviews-River_Rock_Restaurant_and_Marina_Bar-Brick_New_Jersey.html" target="_blank" rel="noopener">TripAdvisor</a>"</li>
+              <li><strong>Harpoon Willy’s</strong> (Seafood, American): "Riverfront tables, fresh catch, and live tunes—this laid-back spot is a local legend for its friendly vibe and sunset cocktails. <em>Best for: relaxed dinners and music lovers.</em> <a href="https://www.opentable.com/r/harpoon-willys-manahawkin" target="_blank" rel="noopener">OpenTable</a>"</li>
+              <li><strong>Jersey Shore BBQ</strong> (BBQ): "Casual, beachy smokehouse with brisket, ribs, and all the fixings—plus outdoor seating. <em>Best for: BBQ fans and big appetites.</em> <a href="https://www.yelp.com/biz/jersey-shore-bbq-brick" target="_blank" rel="noopener">Yelp</a>"</li>
+              <li><strong>Pier 281</strong> (Seafood, American): "Dockside dining with classic seafood, burgers, and cocktails. <em>Best for: boaters and sunset lovers.</em> <a href="https://www.yelp.com/biz/pier-281-marina-bar-and-grill-brick" target="_blank" rel="noopener">Yelp</a>"</li>
             </ul>
-            <Typography variant="h5" gutterBottom>Waterfront & Outdoor Dining</Typography>
+
+            <Typography variant="h5" gutterBottom>Italian & Pizza</Typography>
             <ul>
-              <li>Many restaurants offer decks, patios, or marina views—perfect for sunset dinners or cocktails by the water.</li>
+              <li><strong>Via Veneto Italian Ristorante</strong> (Italian): "Old-school Italian with a loyal following—expect classic red sauce, big portions, and a bustling dining room. <em>Best for: traditionalists and family gatherings.</em> <a href="https://www.yelp.com/biz/via-veneto-italian-restaurant-brick" target="_blank" rel="noopener">Yelp</a>"</li>
+              <li><strong>Vinnie's Pizzeria & Restaurant</strong> (Pizza, Italian): "Neighborhood pizza joint with a crispy crust and friendly faces. <em>Best for: a quick slice or takeout night.</em> <a href="https://www.yelp.com/biz/vinnies-pizzeria-and-restaurant-brick" target="_blank" rel="noopener">Yelp</a>"</li>
+              <li><strong>Cordi’s Italian Gourmet</strong> (Italian, Steak, Seafood): "White-tablecloth charm, gluten-free options, and a wine list to match. Homemade pastas and steaks impress regulars. <em>Best for: date night or a celebratory meal.</em> <a href="https://wanderlog.com/list/geoCategory/204544/where-to-eat-best-restaurants-in-brick" target="_blank" rel="noopener">See more</a>"</li>
+              <li><strong>Manera’s Restaurant</strong> (American, Italian): "Neighborhood favorite for steaks, seafood, and Italian classics. Friendly staff and generous portions keep families coming back. <em>Best for: comfort food and casual dinners.</em> <a href="https://www.yelp.com/biz/maneras-restaurant-brick" target="_blank" rel="noopener">Yelp</a>"</li>
+              <li><strong>Denino’s South Pizzeria</strong> (Pizza, Italian): "NY-style pies, crisp and cheesy, in a lively, family-friendly space. <em>Best for: pizza night and big groups.</em> <a href="https://www.yelp.com/biz/deninos-south-pizzeria-brick" target="_blank" rel="noopener">Yelp</a>"</li>
+              <li><strong>Villa Vittoria</strong> (Italian): "Classic Italian with a romantic vibe, homemade pasta, and attentive service. <em>Best for: special occasions and pasta lovers.</em> <a href="https://www.yelp.com/biz/villa-vittoria-brick" target="_blank" rel="noopener">Yelp</a>"</li>
+              <li><strong>Joe’s Rotisseria</strong> (Pizza, Italian): "Home of the triple-threat pizza—part pizza, part garlic knot, part calzone. <em>Best for: adventurous eaters and Instagram foodies.</em> <a href="https://www.yelp.com/biz/joes-rotisseria-brick" target="_blank" rel="noopener">Yelp</a>"</li>
             </ul>
-            <Typography variant="h5" gutterBottom>Family & Dog-Friendly Options</Typography>
+
+            <Typography variant="h5" gutterBottom>Sushi & Asian</Typography>
             <ul>
-              <li>Most spots welcome families and kids. For dog-friendly patios, check listings on <a href="https://www.bringfido.com/restaurant/city/brick-nj-us/" target="_blank" rel="noopener">BringFido</a>.</li>
+              <li><strong>Golden Cheung</strong> (Chinese): "A local favorite for takeout classics—egg rolls, lo mein, and speedy service. <em>Best for: Friday night cravings and family feasts.</em> <a href="https://www.yelp.com/biz/golden-cheung-brick" target="_blank" rel="noopener">Yelp</a>"</li>
+              <li><strong>Hibachi Grill & Supreme Buffet</strong> (Japanese, Buffet): "All-you-can-eat sushi, hibachi, and more in a festive, family-friendly setting. <em>Best for: big appetites and indecisive eaters.</em> <a href="https://www.yelp.com/biz/hibachi-grill-and-supreme-buffet-brick" target="_blank" rel="noopener">Yelp</a>"</li>
+              <li><strong>Ikko Sushi</strong> (Japanese, Sushi): "Creative rolls, fresh fish, and a stylish, modern setting. <em>Best for: sushi dates and sake fans.</em> <a href="https://www.yelp.com/biz/ikko-japanese-steak-house-and-sushi-bar-brick" target="_blank" rel="noopener">Yelp</a>"</li>
+              <li><strong>Osaka Sushi</strong> (Japanese, Sushi): "Cozy, family-run spot with generous portions and friendly service. <em>Best for: casual sushi nights.</em> <a href="https://www.yelp.com/biz/osaka-japanese-restaurant-brick" target="_blank" rel="noopener">Yelp</a>"</li>
+              <li><strong>Chopstick House</strong> (Chinese): "Classic takeout and dine-in with all your favorites—fast, reliable, and tasty. <em>Best for: quick Chinese cravings.</em> <a href="https://www.yelp.com/biz/chopstick-house-brick" target="_blank" rel="noopener">Yelp</a>"</li>
             </ul>
+
+            <Typography variant="h5" gutterBottom>Breakfast & Brunch Standouts</Typography>
+            <ul>
+              <li><strong>The Brownstone Pancake Factory</strong> (Breakfast, Brunch): "Instagram-worthy pancakes, wild toppings, and a fun, bustling crowd. Kids (and adults) love the over-the-top creations. <em>Best for: family brunch and sweet tooths.</em> <a href="https://www.yelp.com/biz/the-brownstone-pancake-factory-brick" target="_blank" rel="noopener">Yelp</a>"</li>
+              <li><strong>Taylor Sam’s</strong> (Breakfast, Lunch): "Classic Jersey breakfast joint—think big omelets, friendly service, and a local crowd. <em>Best for: hearty starts and no-frills comfort.</em> <a href="https://www.yelp.com/biz/taylor-sams-brick" target="_blank" rel="noopener">Yelp</a>"</li>
+              <li><strong>Shore Good Pancake House</strong> (Breakfast): "Pancake paradise with dozens of options and fast, cheerful service. <em>Best for: early risers and pancake connoisseurs.</em> <a href="https://www.yelp.com/biz/shore-good-pancake-house-brick" target="_blank" rel="noopener">Yelp</a>"</li>
+            </ul>
+
+            <Typography variant="h5" gutterBottom>Global & Casual Eats</Typography>
+            <ul>
+              <li><strong>Shut Up and Eat</strong> (American, Diner): "Breakfast in pajamas? Yes, please! Quirky, fun, and full of comfort food. <em>Best for: breakfast lovers and families with a sense of humor.</em> <a href="https://www.yelp.com/biz/shut-up-and-eat-toms-river" target="_blank" rel="noopener">Yelp</a>"</li>
+              <li><strong>Jersey Shore Greek Grill</strong> (Greek, Mediterranean): "Gyros, souvlaki, and all the Greek classics in a sunny, casual space. <em>Best for: Mediterranean cravings and healthy lunches.</em> <a href="https://www.yelp.com/biz/jersey-shore-greek-grill-brick" target="_blank" rel="noopener">Yelp</a>"</li>
+              <li><strong>Spice Grill</strong> (Indian): "Aromatic curries, fresh naan, and a welcoming staff—spice levels for every palate. <em>Best for: curry nights and adventurous eaters.</em> <a href="https://www.yelp.com/biz/spice-grill-brick" target="_blank" rel="noopener">Yelp</a>"</li>
+              <li><strong>Surf Taco</strong> (Mexican, Surf): "Baja-style tacos, burritos, and surfer vibes. <em>Best for: casual lunches and post-beach bites.</em> <a href="https://www.yelp.com/biz/surf-taco-brick" target="_blank" rel="noopener">Yelp</a>"</li>
+              <li><strong>Windward Deli</strong> (Deli, Sandwiches): "Classic Jersey deli with overstuffed subs and homemade salads. <em>Best for: picnic lunches and hungry crowds.</em> <a href="https://www.yelp.com/biz/windward-deli-brick" target="_blank" rel="noopener">Yelp</a>"</li>
+              <li><strong>Tacos Los Compas</strong> (Mexican): "A hidden gem for authentic tacos, burritos, and homemade salsas. Fast, friendly, and perfect for takeout. <em>Best for: quick bites and flavor seekers.</em> <a href="https://www.yelp.com/biz/tacos-los-compas-brick" target="_blank" rel="noopener">Yelp</a>"</li>
+              <li><strong>El Ranchero</strong> (Mexican): "Festive, family-run spot with sizzling fajitas and margaritas. <em>Best for: group dinners and Tex-Mex cravings.</em> <a href="https://www.yelp.com/biz/el-ranchero-mexican-restaurant-brick" target="_blank" rel="noopener">Yelp</a>"</li>
+              <li><strong>Panera Bread</strong> (Cafe, Bakery): "Reliable chain for soups, salads, and sandwiches—plus free WiFi. <em>Best for: lunch meetings and laptop time.</em> <a href="https://www.yelp.com/biz/panera-bread-brick" target="_blank" rel="noopener">Yelp</a>"</li>
+              <li><strong>Jersey Mike’s Subs</strong> (Subs, Sandwiches): "Beloved sub shop with fresh-sliced meats and classic Jersey attitude. <em>Best for: beach picnic takeout.</em> <a href="https://www.yelp.com/biz/jersey-mikes-subs-brick" target="_blank" rel="noopener">Yelp</a>"</li>
+            </ul>
+
+            <Typography variant="h5" gutterBottom>Healthy & Vegetarian</Typography>
+            <ul>
+              <li><strong>Seed to Sprout</strong> (Vegan, Vegetarian): "Plant-based cafe with inventive bowls, sandwiches, and smoothies. <em>Best for: vegans, vegetarians, and the health-conscious.</em> <a href="https://www.yelp.com/biz/seed-to-sprout-brick" target="_blank" rel="noopener">Yelp</a>"</li>
+              <li><strong>Gluten Free Gloriously</strong> (Bakery, Gluten-Free): "Dedicated gluten-free bakery—cupcakes, breads, and sweet treats for everyone. <em>Best for: gluten-free guests and dessert lovers.</em> <a href="https://www.yelp.com/biz/gluten-free-gloriously-brick" target="_blank" rel="noopener">Yelp</a>"</li>
+              <li><strong>Playa Bowls</strong> (Acai Bowls, Juice Bar): "Beachy chain for acai bowls, smoothies, and fresh juices. <em>Best for: post-beach refreshment and healthy cravings.</em> <a href="https://www.yelp.com/biz/playa-bowls-brick" target="_blank" rel="noopener">Yelp</a>"</li>
+              <li><strong>Green Leaf Smoothie & Juice Bar</strong> (Smoothies, Healthy): "Locally owned, super fresh smoothies and wraps. <em>Best for: a quick, healthy lunch.</em> <a href="https://www.yelp.com/biz/green-leaf-smoothie-and-juice-bar-brick" target="_blank" rel="noopener">Yelp</a>"</li>
+            </ul>
+
+            <Typography variant="h5" gutterBottom>Coffee & Bakeries</Typography>
+            <ul>
+              <li><strong>Rook Coffee</strong> (Coffee): "Trendy regional chain with strong cold brew and a cult following. <em>Best for: coffee aficionados and morning commuters.</em> <a href="https://www.yelp.com/biz/rook-coffee-brick" target="_blank" rel="noopener">Yelp</a>"</li>
+              <li><strong>Revolutionary Lounge & Cafe</strong> (Coffeehouse): "Hip, artsy spot with creative lattes, pastries, and live music. <em>Best for: coffee dates and late-night hangs.</em> <a href="https://www.yelp.com/biz/revolutionary-lounge-and-cafe-toms-river" target="_blank" rel="noopener">Yelp</a>"</li>
+              <li><strong>Mueller’s Bakery</strong> (Bakery): "Old-school bakery with legendary crumb cake and fresh breads. <em>Best for: morning treats and picnic desserts.</em> <a href="https://www.yelp.com/biz/muellers-bakery-bay-head" target="_blank" rel="noopener">Yelp</a>"</li>
+              <li><strong>Dunkin’</strong> (Coffee, Donuts): "America runs on Dunkin’—and so does Brick! <em>Best for: drive-thru caffeine and donut runs.</em> <a href="https://www.yelp.com/biz/dunkin-donuts-brick-3" target="_blank" rel="noopener">Yelp</a>"</li>
+            </ul>
+
+            <Typography variant="h5" gutterBottom>Ice Cream & Sweets</Typography>
+            <ul>
+              <li><strong>Hoffman’s Ice Cream</strong> (Ice Cream): "Legendary Jersey ice cream parlor—huge scoops, homemade flavors, and a line out the door in summer. <em>Best for: classic cones and family outings.</em> <a href="https://www.yelp.com/biz/hoffmans-ice-cream-point-pleasant-beach" target="_blank" rel="noopener">Yelp</a>"</li>
+              <li><strong>Coney Waffle</strong> (Ice Cream, Sweets): "Over-the-top shakes and wild desserts—bring your camera and your sweet tooth. <em>Best for: Instagram moments and sugar highs.</em> <a href="https://www.yelp.com/biz/coney-waffle-belmar" target="_blank" rel="noopener">Yelp</a>"</li>
+              <li><strong>Jersey Freeze</strong> (Ice Cream): "Classic roadside stand for cones, sundaes, and shakes. <em>Best for: summer nights and sweet tooths.</em> <a href="https://www.yelp.com/biz/jersey-freeze-brick" target="_blank" rel="noopener">Yelp</a>"</li>
+              <li><strong>Ralph’s Italian Ices</strong> (Ices, Ice Cream): "Dozens of flavors, super refreshing, and open late. <em>Best for: after-dinner treats and kids’ birthdays.</em> <a href="https://www.yelp.com/biz/ralphs-famous-italian-ices-and-ice-cream-brick" target="_blank" rel="noopener">Yelp</a>"</li>
+              <li><strong>Kohr’s Frozen Custard</strong> (Frozen Custard): "Boardwalk classic—creamy, swirled cones that taste like summer. <em>Best for: beach days and nostalgia.</em> <a href="https://www.yelp.com/biz/kohrs-the-original-frozen-custard-point-pleasant-beach" target="_blank" rel="noopener">Yelp</a>"</li>
+            </ul>
+
+            <Typography variant="h5" gutterBottom>Deli & Subs</Typography>
+            <ul>
+              <li><strong>Jersey Mike’s Subs</strong> (Subs, Sandwiches): "Beloved sub shop with fresh-sliced meats and classic Jersey attitude. <em>Best for: beach picnic takeout.</em> <a href="https://www.yelp.com/biz/jersey-mikes-subs-brick" target="_blank" rel="noopener">Yelp</a>"</li>
+              <li><strong>Windward Deli</strong> (Deli, Sandwiches): "Classic Jersey deli with overstuffed subs and homemade salads. <em>Best for: picnic lunches and hungry crowds.</em> <a href="https://www.yelp.com/biz/windward-deli-brick" target="_blank" rel="noopener">Yelp</a>"</li>
+              <li><strong>Bagel Exchange</strong> (Bagels, Deli): "Fresh bagels, breakfast sandwiches, and deli favorites—perfect for beach mornings. <em>Best for: quick breakfast or lunch on the go.</em> <a href="https://www.yelp.com/biz/bagel-exchange-brick" target="_blank" rel="noopener">Yelp</a>"</li>
+            </ul>
+
+            <Typography variant="h5" gutterBottom>BBQ & Smokehouse</Typography>
+            <ul>
+              <li><strong>Jersey Shore BBQ</strong> (BBQ): "Casual, beachy smokehouse with brisket, ribs, and all the fixings—plus outdoor seating. <em>Best for: BBQ fans and big appetites.</em> <a href="https://www.yelp.com/biz/jersey-shore-bbq-brick" target="_blank" rel="noopener">Yelp</a>"</li>
+              <li><strong>Smokies Craft BBQ</strong> (BBQ): "Low-and-slow smoked meats, creative sides, and a rustic vibe. <em>Best for: carnivores and comfort food lovers.</em> <a href="https://www.yelp.com/biz/smokies-craft-bbq-brick" target="_blank" rel="noopener">Yelp</a>"</li>
+            </ul>
+
+            <Typography variant="h5" gutterBottom>Fast Food & Chains</Typography>
+            <ul>
+              <li><strong>Chick-fil-A</strong> (Fast Food): "Friendly service, crispy chicken, and a drive-thru that moves fast. <em>Best for: quick bites and family meals.</em> <a href="https://www.yelp.com/biz/chick-fil-a-brick" target="_blank" rel="noopener">Yelp</a>"</li>
+              <li><strong>Five Guys</strong> (Burgers, Fast Food): "Juicy burgers, endless toppings, and peanut-shell floors. <em>Best for: burger cravings and takeout.</em> <a href="https://www.yelp.com/biz/five-guys-brick" target="_blank" rel="noopener">Yelp</a>"</li>
+              <li><strong>Shake Shack</strong> (Burgers, Shakes): "Trendy chain with crinkle fries, shakes, and smash burgers. <em>Best for: a quick, tasty fix.</em> <a href="https://www.yelp.com/biz/shake-shack-brick" target="_blank" rel="noopener">Yelp</a>"</li>
+            </ul>
+
+            <Typography variant="h5" gutterBottom>Family & Dog-Friendly</Typography>
+            <ul>
+              <li>Most restaurants welcome kids. For dog-friendly patios, check <a href="https://www.bringfido.com/restaurant/city/brick-nj-us/" target="_blank" rel="noopener">BringFido</a>.</li>
+            </ul>
+
             <Typography variant="h5" gutterBottom>Tips & Resources</Typography>
             <ul>
               <li>Reservations recommended for waterfront and popular spots, especially in summer.</li>
