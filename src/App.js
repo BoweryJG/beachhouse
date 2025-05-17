@@ -17,7 +17,6 @@ import {
   List, 
   ListItem, 
   ListItemText, 
-  Divider,
   Accordion,
   AccordionSummary,
   AccordionDetails,
@@ -27,7 +26,6 @@ import {
   BeachAccess, 
   Restaurant, 
   LocalGroceryStore, 
-  DirectionsBoat, 
   Park, 
   Delete
 } from '@mui/icons-material';
@@ -157,7 +155,7 @@ function TabPanel(props) {
 function App() {
   const [tabValue, setTabValue] = useState(0);
   const [darkMode, setDarkMode] = useState(false);
-  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+  // const isMobile = useMediaQuery(theme.breakpoints.down('sm')); // Commented out as it's currently unused
 
   const handleTabChange = (event, newValue) => {
     setTabValue(newValue);
@@ -387,7 +385,7 @@ function App() {
                       Large parking lot ($10/day, often with open spots even on busy weekends).<br/>
                       Snack stand, showers, restrooms, attentive lifeguards.<br/>
                       Not overly crowded, family-friendly.<br/>
-                      <a href="https://www.tripadvisor.com/Attraction_Review-g46321-d1726533-Reviews-Brick_Beach_1-Brick_New_Jersey.html" target="_blank" rel="noopener">TripAdvisor Reviews</a>
+                      <a href="https://www.tripadvisor.com/Attraction_Review-g46321-d1726533-Reviews-Brick_Beach_1-Brick_New_Jersey.html" target="_blank" rel="noreferrer noopener">TripAdvisor Reviews</a>
                     </Typography>
                   </CardContent>
                 </Card>
@@ -401,7 +399,7 @@ function App() {
                       No concessions, bathrooms, or parking directly at this beach.<br/>
                       Park at Beach I or III and walk.<br/>
                       Known for community events (like lifeguard camp).<br/>
-                      <a href="https://www.tripadvisor.com/Attraction_Review-g46321-d273133-Reviews-Brick_Beach_2-Brick_New_Jersey.html" target="_blank" rel="noopener">TripAdvisor Reviews</a>
+                      <a href="https://www.tripadvisor.com/Attraction_Review-g46321-d273133-Reviews-Brick_Beach_2-Brick_New_Jersey.html" target="_blank" rel="noreferrer noopener">TripAdvisor Reviews</a>
                     </Typography>
                   </CardContent>
                 </Card>
@@ -460,10 +458,10 @@ function App() {
             <Box sx={{ mt: 3 }}>
               <Typography variant="h6">Resources & Links</Typography>
               <ul>
-                <li><a href="https://www.bricknj.gov/departments/recreation/beaches.php" target="_blank" rel="noopener">Official Brick Beaches Info</a></li>
-                <li><a href="https://www.thefisherman.com/article/brick-beaches/" target="_blank" rel="noopener">Brick Beaches - The Fisherman</a></li>
-                <li><a href="https://newjersey.news12.com/best-beaches-checking-out-ocean-beaches-brick-township-nj" target="_blank" rel="noopener">Local News Beach Feature</a></li>
-                <li><a href="https://www.thecitypulse.com/post/brick-beaches-badges-parking-good-deal-unassuming-beaches-separated-from-brick-where-is-brick-ii" target="_blank" rel="noopener">Brick Beaches Guide (CityPulse)</a></li>
+                <li><a href="https://www.bricknj.gov/departments/recreation/beaches.php" target="_blank" rel="noreferrer noopener">Official Brick Beaches Info</a></li>
+                <li><a href="https://www.thefisherman.com/article/brick-beaches/" target="_blank" rel="noreferrer noopener">Brick Beaches - The Fisherman</a></li>
+                <li><a href="https://newjersey.news12.com/best-beaches-checking-out-ocean-beaches-brick-township-nj" target="_blank" rel="noreferrer noopener">Local News Beach Feature</a></li>
+                <li><a href="https://www.thecitypulse.com/post/brick-beaches-badges-parking-good-deal-unassuming-beaches-separated-from-brick-where-is-brick-ii" target="_blank" rel="noreferrer noopener">Brick Beaches Guide (CityPulse)</a></li>
               </ul>
             </Box>
           </Box>

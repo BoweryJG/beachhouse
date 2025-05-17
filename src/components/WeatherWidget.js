@@ -25,7 +25,7 @@ const WeatherWidget = () => {
         // Get NWS gridpoint for Brick, NJ
         const pointsResp = await fetch(`https://api.weather.gov/points/${LAT},${LON}`);
         const pointsData = await pointsResp.json();
-        const forecastUrl = pointsData.properties.forecast;
+        // const forecastUrl = pointsData.properties.forecast; // Unused for now
         const obsUrl = pointsData.properties.observationStations;
 
         // Get current conditions
