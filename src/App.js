@@ -37,6 +37,7 @@ import Favorites from './components/Favorites';
 import Guestbook from './components/Guestbook';
 import EmergencyInfo from './components/EmergencyInfo';
 import HouseManual from './components/HouseManual';
+import RestaurantTravelTimes from './components/RestaurantTravelTimes';
 import DarkModeToggle from './components/DarkModeToggle';
 import CrabbingSection from './components/CrabbingSection';
 import './App.css';
@@ -187,10 +188,10 @@ function App() {
           </Typography>
           <DarkModeToggle darkMode={darkMode} setDarkMode={setDarkMode} />
           <Box sx={{ display: { xs: 'none', md: 'block' } }}>
-            <Button color="inherit" onClick={() => setTabValue(0)}>Crabbing</Button>
-            <Button color="inherit" onClick={() => setTabValue(1)}>Home</Button>
-            <Button color="inherit" onClick={() => setTabValue(2)}>Beaches</Button>
-            <Button color="inherit" onClick={() => setTabValue(3)}>Dining</Button>
+            <Button color="inherit" onClick={() => setTabValue(0)}>Home</Button>
+            <Button color="inherit" onClick={() => setTabValue(1)}>Beaches</Button>
+            <Button color="inherit" onClick={() => setTabValue(2)}>Dining</Button>
+            <Button color="inherit" onClick={() => setTabValue(3)}>Crabbing</Button>
             <Button color="inherit" onClick={() => setTabValue(4)}>Local Info</Button>
           </Box>
         </Toolbar>
@@ -202,10 +203,10 @@ function App() {
             textColor="inherit"
             variant="fullWidth"
           >
-            <Tab label="Crabbing" />
             <Tab label="Home" />
             <Tab label="Beaches" />
             <Tab label="Dining" />
+            <Tab label="Crabbing" />
             <Tab label="Local Info" />
           </Tabs>
         </Box>
@@ -235,9 +236,6 @@ function App() {
 
       <Container maxWidth="lg" sx={{ mt: 4 }}>
         <TabPanel value={tabValue} index={0}>
-          <CrabbingSection />
-        </TabPanel>
-        <TabPanel value={tabValue} index={1}>
           <Typography variant="h4" gutterBottom>
             Welcome to Your Bayfront Paradise
           </Typography>
@@ -254,7 +252,7 @@ function App() {
           </Box>
           {/* Unique Local Experience */}
           <Box sx={{ my: 4 }}>
-            {/* <CrabbingSection /> */}
+            {/* Crabbing section moved to its own tab */}
           </Box>
           {/* Visual Gallery and Family Favorites */}
           <Box sx={{ my: 4 }}>
@@ -365,7 +363,7 @@ function App() {
           </Grid>
         </TabPanel>
 
-        <TabPanel value={tabValue} index={2}>
+        <TabPanel value={tabValue} index={1}>
           <Box sx={{ mb: 4 }}>
             <Typography variant="h4" gutterBottom>
               🏖️ Brick Township Beaches: Expanded Guide
@@ -512,13 +510,15 @@ function App() {
           </Box>
         </TabPanel>
 
-        <TabPanel value={tabValue} index={3}>
+        <TabPanel value={tabValue} index={2}>
           <Typography variant="h4" gutterBottom>
-            🍽️ Dining in Brick: Zagat-Style Local Guide
+            🍽️ Dining Guide: Brick & Beyond
           </Typography>
           <Typography paragraph>
             Welcome to your Zagat-style dining guide for Brick Township! Each capsule review below highlights cuisine, atmosphere, and what makes each spot memorable—so you can dine like a local, whether you're craving a sunset dinner or a family-friendly brunch.
           </Typography>
+          
+          <RestaurantTravelTimes />
 
           <Box sx={{ my: 3 }}>
             <Typography variant="h5" gutterBottom>Waterfront Wonders</Typography>
@@ -627,6 +627,10 @@ function App() {
               <li>See more reviews and photos: <a href="https://www.tripadvisor.com/Restaurants-g46321-Brick_New_Jersey.html" target="_blank" rel="noopener">TripAdvisor: Brick Restaurants</a></li>
             </ul>
           </Box>
+        </TabPanel>
+
+        <TabPanel value={tabValue} index={3}>
+          <CrabbingSection />
         </TabPanel>
 
         <TabPanel value={tabValue} index={4}>
