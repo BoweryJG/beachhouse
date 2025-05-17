@@ -363,6 +363,106 @@ function App() {
         </TabPanel>
 
         <TabPanel value={tabValue} index={1}>
+          <Box sx={{ mb: 4 }}>
+            <Typography variant="h4" gutterBottom>
+              🏖️ Brick Township Beaches: Expanded Guide
+            </Typography>
+            <Typography variant="body1" sx={{ mb: 2 }}>
+              Brick Township operates three ocean beaches (Brick Beach I, II, III) on the Barnegat Peninsula, plus a riverfront beach at Windward Beach Park. All are open Memorial Day–Labor Day, 9:30am–5:30pm, with lifeguards and amenities.
+            </Typography>
+
+            {/* Beach Highlights */}
+            <Grid container spacing={2}>
+              <Grid item xs={12} md={6}>
+                <Card sx={{ mb: 2 }}>
+                  <CardContent>
+                    <Typography variant="h6">Brick Beach I</Typography>
+                    <Typography variant="body2">
+                      <strong>310 Route 35 North</strong><br/>
+                      Large parking lot ($10/day, often with open spots even on busy weekends).<br/>
+                      Snack stand, showers, restrooms, attentive lifeguards.<br/>
+                      Not overly crowded, family-friendly.<br/>
+                      <a href="https://www.tripadvisor.com/Attraction_Review-g46321-d1726533-Reviews-Brick_Beach_1-Brick_New_Jersey.html" target="_blank" rel="noopener">TripAdvisor Reviews</a>
+                    </Typography>
+                  </CardContent>
+                </Card>
+              </Grid>
+              <Grid item xs={12} md={6}>
+                <Card sx={{ mb: 2 }}>
+                  <CardContent>
+                    <Typography variant="h6">Brick Beach II</Typography>
+                    <Typography variant="body2">
+                      <strong>354 Route 35 North</strong><br/>
+                      No concessions, bathrooms, or parking directly at this beach.<br/>
+                      Park at Beach I or III and walk.<br/>
+                      Known for community events (like lifeguard camp).<br/>
+                      <a href="https://www.tripadvisor.com/Attraction_Review-g46321-d273133-Reviews-Brick_Beach_2-Brick_New_Jersey.html" target="_blank" rel="noopener">TripAdvisor Reviews</a>
+                    </Typography>
+                  </CardContent>
+                </Card>
+              </Grid>
+              <Grid item xs={12} md={6}>
+                <Card sx={{ mb: 2 }}>
+                  <CardContent>
+                    <Typography variant="h6">Brick Beach III</Typography>
+                    <Typography variant="body2">
+                      <strong>440 Route 35 North</strong><br/>
+                      Large parking lot, showers, restrooms, concessions.<br/>
+                      Direct beach access, wide sandy area.<br/>
+                      Well-marked and easily accessible from Route 35.
+                    </Typography>
+                  </CardContent>
+                </Card>
+              </Grid>
+              <Grid item xs={12} md={6}>
+                <Card sx={{ mb: 2 }}>
+                  <CardContent>
+                    <Typography variant="h6">Windward Beach Park</Typography>
+                    <Typography variant="body2">
+                      Riverfront beach, great for picnics, playgrounds, and events.<br/>
+                      Popular for dog walks and family outings.<br/>
+                      Hosts Brick’s Summerfest concerts and fireworks.
+                    </Typography>
+                  </CardContent>
+                </Card>
+              </Grid>
+            </Grid>
+
+            {/* Amenities & Tips */}
+            <Box sx={{ mt: 3 }}>
+              <Typography variant="h6">Amenities & Tips</Typography>
+              <ul>
+                <li><strong>Badges:</strong> Required for all beaches (purchase at beach or online).</li>
+                <li><strong>Parking:</strong> Paid lots at Beach I & III; badge may include parking.</li>
+                <li><strong>Facilities:</strong> Showers, restrooms, and food concessions at main beaches.</li>
+                <li><strong>Accessibility:</strong> All ocean beaches are well-marked along Route 35.</li>
+                <li><strong>Rules:</strong> No alcohol, no dogs (in summer), no fires, no glass containers.</li>
+              </ul>
+            </Box>
+
+            {/* Local Insights */}
+            <Box sx={{ mt: 3 }}>
+              <Typography variant="h6">Local Insights</Typography>
+              <ul>
+                <li><strong>Best for Families:</strong> Brick Beach I (calm, not too crowded).</li>
+                <li><strong>Best for Events:</strong> Windward Beach Park (concerts, fireworks, farmers market).</li>
+                <li><strong>Hidden Gem:</strong> Early mornings or off-season for peaceful walks.</li>
+                <li><strong>Surfcasting:</strong> Good patch of sand for fishing on the Barrier Island.</li>
+              </ul>
+            </Box>
+
+            {/* Resource Links */}
+            <Box sx={{ mt: 3 }}>
+              <Typography variant="h6">Resources & Links</Typography>
+              <ul>
+                <li><a href="https://www.bricknj.gov/departments/recreation/beaches.php" target="_blank" rel="noopener">Official Brick Beaches Info</a></li>
+                <li><a href="https://www.thefisherman.com/article/brick-beaches/" target="_blank" rel="noopener">Brick Beaches - The Fisherman</a></li>
+                <li><a href="https://newjersey.news12.com/best-beaches-checking-out-ocean-beaches-brick-township-nj" target="_blank" rel="noopener">Local News Beach Feature</a></li>
+                <li><a href="https://www.thecitypulse.com/post/brick-beaches-badges-parking-good-deal-unassuming-beaches-separated-from-brick-where-is-brick-ii" target="_blank" rel="noopener">Brick Beaches Guide (CityPulse)</a></li>
+              </ul>
+            </Box>
+          </Box>
+
           <Typography variant="h4" gutterBottom>
             🏖️ Brick Township Beaches: What Guests Need to Know
           </Typography>
