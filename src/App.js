@@ -361,9 +361,49 @@ function App() {
 
         <TabPanel value={tabValue} index={1}>
           <Typography variant="h4" gutterBottom>
-            Beaches & Water Access
+            🏖️ Brick Township Beaches: What Guests Need to Know
           </Typography>
-          {/* ... */}
+          <Typography paragraph>
+            Brick Township is home to several beautiful, family-friendly beaches along both the ocean and Barnegat Bay. Here’s everything you need to know for a perfect beach day.
+          </Typography>
+          <Box sx={{ my: 3 }}>
+            <Typography variant="h5" gutterBottom>Main Beaches & Locations</Typography>
+            <ul>
+              <li><strong>Brick Beach I:</strong> 310 Route 35 North (Oceanfront). Large parking lot, outdoor showers, concessions, lockers, and restrooms.</li>
+              <li><strong>Brick Beach II & III:</strong> Easily accessible along Route 35. Both have direct beach access, lifeguards, showers, restrooms, and concessions.</li>
+              <li><strong>Bay Beach:</strong> Calm waters, great for kids and families.</li>
+            </ul>
+            <Typography variant="h5" gutterBottom>Hours & Lifeguards</Typography>
+            <ul>
+              <li><strong>Lifeguard Coverage:</strong> Weekends only from Memorial Day to mid-June, then daily through Labor Day.</li>
+              <li><strong>Hours:</strong> 9:30am – 5:30pm (weather permitting).</li>
+            </ul>
+            <Typography variant="h5" gutterBottom>Badges & Access</Typography>
+            <ul>
+              <li><strong>Beach Badges:</strong> Required for all beaches. Purchase at the beach or online via the Brick Township website.</li>
+              <li><strong>Parking:</strong> Large, convenient lots at each beach. Paid parking; badge purchase may include parking.</li>
+            </ul>
+            <Typography variant="h5" gutterBottom>Amenities</Typography>
+            <ul>
+              <li>Outdoor showers, restrooms, and food concessions at all main beaches.</li>
+              <li>Lockers available for day use.</li>
+              <li>Wide, clean sand with plenty of space—even in the off-season.</li>
+            </ul>
+            <Typography variant="h5" gutterBottom>Rules & Tips</Typography>
+            <ul>
+              <li><strong>No Alcohol:</strong> Prohibited on beaches and parking lots. Coolers may be inspected.</li>
+              <li><strong>Family Friendly:</strong> Calm bay beach for kids, ocean beaches for swimming and sunbathing.</li>
+              <li><strong>Dog Policy:</strong> Dogs are not allowed on ocean beaches during the summer season. For dog-friendly beaches, check local listings.</li>
+              <li><strong>Best Times:</strong> Arrive early for best parking and less crowded sand.</li>
+              <li><strong>Accessibility:</strong> Beaches are well-marked and easy to find along Route 35.</li>
+            </ul>
+            <Typography variant="h6" gutterBottom>More Resources</Typography>
+            <ul>
+              <li><a href="https://www.bricknj.gov/departments/recreation/beaches.php" target="_blank" rel="noopener">Official Brick Township Beaches Info</a></li>
+              <li><a href="https://www.tripadvisor.com/Attraction_Review-g46321-d1726533-Reviews-Brick_Beach_1-Brick_New_Jersey.html" target="_blank" rel="noopener">TripAdvisor: Brick Beach 1 Reviews</a></li>
+              <li><a href="https://www.bringfido.com/attraction/beaches/city/brick-nj-us/" target="_blank" rel="noopener">Dog Friendly Beaches</a></li>
+            </ul>
+          </Box>
         </TabPanel>
 
         <TabPanel value={tabValue} index={3}>
