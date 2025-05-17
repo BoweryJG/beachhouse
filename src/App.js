@@ -189,10 +189,11 @@ function App() {
           </Typography>
           <DarkModeToggle darkMode={darkMode} setDarkMode={setDarkMode} />
           <Box sx={{ display: { xs: 'none', md: 'block' } }}>
-            <Button color="inherit" onClick={() => setTabValue(0)}>Home</Button>
-            <Button color="inherit" onClick={() => setTabValue(1)}>Beaches</Button>
-            <Button color="inherit" onClick={() => setTabValue(2)}>Dining</Button>
-            <Button color="inherit" onClick={() => setTabValue(3)}>Local Info</Button>
+            <Button color="inherit" onClick={() => setTabValue(0)}>Crabbing</Button>
+            <Button color="inherit" onClick={() => setTabValue(1)}>Home</Button>
+            <Button color="inherit" onClick={() => setTabValue(2)}>Beaches</Button>
+            <Button color="inherit" onClick={() => setTabValue(3)}>Dining</Button>
+            <Button color="inherit" onClick={() => setTabValue(4)}>Local Info</Button>
           </Box>
         </Toolbar>
         <Box sx={{ display: { md: 'none' } }}>
@@ -203,6 +204,7 @@ function App() {
             textColor="inherit"
             variant="fullWidth"
           >
+            <Tab label="Crabbing" />
             <Tab label="Home" />
             <Tab label="Beaches" />
             <Tab label="Dining" />
@@ -235,6 +237,9 @@ function App() {
 
       <Container maxWidth="lg" sx={{ mt: 4 }}>
         <TabPanel value={tabValue} index={0}>
+          <CrabbingSection />
+        </TabPanel>
+        <TabPanel value={tabValue} index={1}>
           <Typography variant="h4" gutterBottom>
             Welcome to Your Bayfront Paradise
           </Typography>
@@ -251,7 +256,7 @@ function App() {
           </Box>
           {/* Unique Local Experience */}
           <Box sx={{ my: 4 }}>
-            <CrabbingSection />
+            {/* <CrabbingSection /> */}
           </Box>
           {/* Visual Gallery and Family Favorites */}
           <Box sx={{ my: 4 }}>
@@ -362,7 +367,7 @@ function App() {
           </Grid>
         </TabPanel>
 
-        <TabPanel value={tabValue} index={1}>
+        <TabPanel value={tabValue} index={2}>
           <Box sx={{ mb: 4 }}>
             <Typography variant="h4" gutterBottom>
               🏖️ Brick Township Beaches: Expanded Guide
@@ -509,7 +514,7 @@ function App() {
           </Box>
         </TabPanel>
 
-        <TabPanel value={tabValue} index={2}>
+        <TabPanel value={tabValue} index={3}>
           <Typography variant="h4" gutterBottom>
             🍽️ Dining in Brick: Zagat-Style Local Guide
           </Typography>
@@ -626,7 +631,7 @@ function App() {
           </Box>
         </TabPanel>
 
-        <TabPanel value={tabValue} index={3}>
+        <TabPanel value={tabValue} index={4}>
           <Typography variant="h4" gutterBottom>
             📍 Local Info & Essentials
           </Typography>

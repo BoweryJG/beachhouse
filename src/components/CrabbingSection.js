@@ -4,6 +4,32 @@ import { Box, Typography, Link, List, ListItem } from '@mui/material';
 const CrabbingSection = () => (
   <Box sx={{ my: 4, p: 3, background: 'rgba(255,255,255,0.93)', borderRadius: 4, boxShadow: 2 }}>
     <Typography variant="h4" gutterBottom>
+      🦀 Why 125 Shore Dr. is a Crabbing Hotspot
+    </Typography>
+    <Typography paragraph>
+      <strong>Prime Location:</strong> 125 Shore Dr. sits at the mouth of the Metedeconk River, where it meets Barnegat Bay—one of the top blue crab habitats on the Jersey Shore. The unique mix of saltwater from the bay and freshwater from the river creates the perfect brackish environment for blue crabs to thrive.
+    </Typography>
+    <Typography paragraph>
+      <strong>Abundant Marshes, Creeks, & Tidal Flow:</strong> The shoreline here is lined with marshes, tidal creeks, and submerged grass beds—ideal habitats for crabs to hide, feed, and molt. Incoming and outgoing tides bring nutrients and bait, attracting both crabs and the small fish they prey on. Docks, bulkheads, and pilings provide additional shelter and structure.
+    </Typography>
+    <Typography paragraph>
+      <strong>Consistent Water Quality & Food Supply:</strong> The Metedeconk River watershed is well-known for its productivity and clean water, supporting a healthy crab population. The blend of natural and residential shorelines means plenty of food scraps and organic matter, which blue crabs love.
+    </Typography>
+    <Typography paragraph>
+      <strong>Local Tradition:</strong> Families at 125 Shore Dr. and throughout Brick have crabbed these waters for generations, passing down tips and favorite spots. The area is recognized in local guides and reports as a consistent producer of keeper-sized blue crabs, especially in late summer.
+    </Typography>
+    <Typography paragraph>
+      <strong>Easy Access & Safe Crabbing:</strong> The bulkheaded shoreline, private dock, and shallow water make it easy and safe for guests of all ages to set traps or use hand lines right from the property—no boat needed!
+    </Typography>
+    <Typography variant="h6" gutterBottom>Learn More</Typography>
+    <List>
+      <ListItem><Link href="https://barnegatbaypartnership.org/learn/watershed-map/metedeconk-river-watershed/" target="_blank" rel="noopener">Barnegat Bay Partnership: Metedeconk River Watershed</Link></ListItem>
+      <ListItem><Link href="https://bestofnj.com/features/family/the-best-crabbing-spots-in-new-jersey/" target="_blank" rel="noopener">Best of NJ: The Best Crabbing Spots in New Jersey</Link></ListItem>
+      <ListItem><Link href="https://bbshellfish.org/crab/" target="_blank" rel="noopener">Barnegat Bay Shellfish: Crabs</Link></ListItem>
+      <ListItem><Link href="https://njmonthly.com/articles/jersey-shore/net-benefits-catching-crabs/" target="_blank" rel="noopener">NJ Monthly: Net Benefits—Catching Crabs</Link></ListItem>
+    </List>
+
+    <Typography variant="h4" gutterBottom>
       🦀 Barnegat Bay Crabbing: A Local Tradition
     </Typography>
     <Typography paragraph>
