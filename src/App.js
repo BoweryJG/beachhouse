@@ -312,7 +312,10 @@ function App() {
 
           <Grid container spacing={4} sx={{ mt: 2 }}>
             <Grid item xs={12} sm={6} md={3}>
-              <Card sx={{ height: '100%' }}>
+              <Card 
+                sx={{ height: '100%', cursor: 'pointer' }} 
+                onClick={() => setTabValue(1)}
+              >
                 <CardContent>
                   <BeachAccess sx={{ fontSize: 40, color: theme.palette.primary.main }} />
                   <Typography variant="h6" component="div">
@@ -325,7 +328,10 @@ function App() {
               </Card>
             </Grid>
             <Grid item xs={12} sm={6} md={3}>
-              <Card sx={{ height: '100%' }}>
+              <Card 
+                sx={{ height: '100%', cursor: 'pointer' }} 
+                onClick={() => setTabValue(2)}
+              >
                 <CardContent>
                   <Restaurant sx={{ fontSize: 40, color: theme.palette.primary.main }} />
                   <Typography variant="h6" component="div">
@@ -338,7 +344,10 @@ function App() {
               </Card>
             </Grid>
             <Grid item xs={12} sm={6} md={3}>
-              <Card sx={{ height: '100%' }}>
+              <Card 
+                sx={{ height: '100%', cursor: 'pointer' }} 
+                onClick={() => setTabValue(4)}
+              >
                 <CardContent>
                   <LocalGroceryStore sx={{ fontSize: 40, color: theme.palette.primary.main }} />
                   <Typography variant="h6" component="div">
@@ -351,7 +360,10 @@ function App() {
               </Card>
             </Grid>
             <Grid item xs={12} sm={6} md={3}>
-              <Card sx={{ height: '100%' }}>
+              <Card 
+                sx={{ height: '100%', cursor: 'pointer' }} 
+                onClick={() => setTabValue(4)}
+              >
                 <CardContent>
                   <Delete sx={{ fontSize: 40, color: theme.palette.primary.main }} />
                   <Typography variant="h6" component="div">
