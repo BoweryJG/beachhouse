@@ -38,6 +38,7 @@ import Guestbook from './components/Guestbook';
 import EmergencyInfo from './components/EmergencyInfo';
 import HouseManual from './components/HouseManual';
 import RestaurantTravelTimes from './components/RestaurantTravelTimes';
+import BeachTravelTimes from './components/BeachTravelTimes';
 import DarkModeToggle from './components/DarkModeToggle';
 import CrabbingSection from './components/CrabbingSection';
 import './App.css';
@@ -470,6 +471,7 @@ function App() {
           <Typography paragraph>
             Brick Township is home to several beautiful, family-friendly beaches along both the ocean and Barnegat Bay. Here’s everything you need to know for a perfect beach day.
           </Typography>
+          <BeachTravelTimes />
           <Box sx={{ my: 3 }}>
             <Typography variant="h5" gutterBottom>Main Beaches & Locations</Typography>
             <ul>
