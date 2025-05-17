@@ -18,6 +18,9 @@ import {
   ListItem, 
   ListItemText, 
   Divider,
+  Accordion,
+  AccordionSummary,
+  AccordionDetails,
   useMediaQuery
 } from '@mui/material';
 import { 
@@ -524,6 +527,260 @@ function App() {
         </TabPanel>
 
         <TabPanel value={tabValue} index={3}>
+          <Typography variant="h4" gutterBottom>
+            📍 Local Info & Essentials
+          </Typography>
+
+          {/* Quick Links */}
+          <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 2, mb: 3 }}>
+            <Button variant="outlined" color="primary" href="#events" size="small">Events</Button>
+            <Button variant="outlined" color="primary" href="#transport" size="small">Transport</Button>
+            <Button variant="outlined" color="primary" href="#shops" size="small">Shops</Button>
+            <Button variant="outlined" color="primary" href="#emergency" size="small">Emergency</Button>
+            <Button variant="outlined" color="primary" href="#services" size="small">Services</Button>
+            <Button variant="outlined" color="primary" href="#weather" size="small">Weather</Button>
+            <Button variant="outlined" color="primary" href="#tips" size="small">Insider Tips</Button>
+            <Button variant="outlined" color="primary" href="#faqs" size="small">FAQs</Button>
+            <Button variant="outlined" color="primary" href="#manual" size="small">House Manual</Button>
+            <Button variant="outlined" color="primary" href="#map" size="small">Map</Button>
+            <Button variant="outlined" color="primary" href="#guestbook" size="small">Guestbook</Button>
+            <Button variant="outlined" color="primary" href="#feedback" size="small">Feedback</Button>
+            <Button variant="outlined" color="primary" href="#seasonal" size="small">Seasonal Guides</Button>
+          </Box>
+
+          {/* Accordions for each section */}
+          <Box>
+            {/* Events Calendar */}
+            <Accordion id="events" defaultExpanded>
+              <AccordionSummary expandIcon={<span>📅</span>}>
+                <Typography variant="h6">Events Calendar & Highlights</Typography>
+              </AccordionSummary>
+              <AccordionDetails>
+                <Typography>
+                  <strong>Spring/Summer:</strong> Brick Farmers Market (Saturdays at Windward Beach), Summerfest Concerts & Fireworks, Brick Beach Bonfire Night, local art fairs.<br/>
+                  <strong>Fall:</strong> Harvest Fest, Food Truck Festival, Halloween Parade.<br/>
+                  <strong>Winter:</strong> Holiday Tree Lighting, Winterfest on the Bay.<br/>
+                  <a href="https://www.bricktownship.net/events/" target="_blank" rel="noopener">See Full Events Calendar</a>
+                </Typography>
+              </AccordionDetails>
+            </Accordion>
+
+            {/* Transportation & Parking */}
+            <Accordion id="transport">
+              <AccordionSummary expandIcon={<span>🚌</span>}>
+                <Typography variant="h6">Transportation & Parking</Typography>
+              </AccordionSummary>
+              <AccordionDetails>
+                <Typography>
+                  <strong>Public Transit:</strong> NJ Transit buses serve Brick and connect to Point Pleasant, Toms River, and the shore. Nearest train: Point Pleasant Beach NJ Transit station.<br/>
+                  <strong>Ride-shares:</strong> Uber, Lyft, and local taxis available.<br/>
+                  <strong>Parking:</strong> Free and paid lots at beaches and parks. Beach badge may include parking. Street parking is limited during summer weekends.<br/>
+                  <a href="https://www.njtransit.com/" target="_blank" rel="noopener">NJ Transit Info</a>
+                </Typography>
+              </AccordionDetails>
+            </Accordion>
+
+            {/* Shops & Essentials */}
+            <Accordion id="shops">
+              <AccordionSummary expandIcon={<span>🛒</span>}>
+                <Typography variant="h6">Shops & Essentials</Typography>
+              </AccordionSummary>
+              <AccordionDetails>
+                <Typography>
+                  <strong>Groceries:</strong> ShopRite (Route 70), Stop & Shop, Lidl, Jersey Shore Farmers Market.<br/>
+                  <strong>Pharmacies:</strong> CVS, Walgreens, Rite Aid (24hr options nearby).<br/>
+                  <strong>Liquor:</strong> Brick Liquors, Spirits Unlimited.<br/>
+                  <strong>Bait & Tackle:</strong> Jersey Hooker Outfitters, Fisherman’s Supply.<br/>
+                  <strong>Surf Shops:</strong> Brave New World, Surf Unlimited.<br/>
+                  <strong>Markets:</strong> Windward Beach Farmers Market (seasonal).<br/>
+                  <a href="https://www.shoprite.com/sm/planning/rsid/141/" target="_blank" rel="noopener">ShopRite Brick</a>
+                </Typography>
+              </AccordionDetails>
+            </Accordion>
+
+            {/* Emergency & Health */}
+            <Accordion id="emergency">
+              <AccordionSummary expandIcon={<span>🚑</span>}>
+                <Typography variant="h6">Emergency & Health</Typography>
+              </AccordionSummary>
+              <AccordionDetails>
+                <Typography>
+                  <strong>Urgent Care:</strong> AFC Urgent Care (732-262-9500), Hackensack Meridian Urgent Care.<br/>
+                  <strong>Hospitals:</strong> Ocean Medical Center (Brick), Community Medical Center (Toms River).<br/>
+                  <strong>Pharmacy (24hr):</strong> Walgreens, CVS (check location).<br/>
+                  <strong>Emergency:</strong> 911 (Police, Fire, Ambulance).<br/>
+                  <strong>Non-Emergency:</strong> Brick Police (732-262-1100), Poison Control (1-800-222-1222).<br/>
+                  <a href="https://www.hackensackmeridianhealth.org/en/Locations/Ocean-Medical-Center" target="_blank" rel="noopener">Ocean Medical Center</a>
+                </Typography>
+              </AccordionDetails>
+            </Accordion>
+
+            {/* Local Services */}
+            <Accordion id="services">
+              <AccordionSummary expandIcon={<span>🛠️</span>}>
+                <Typography variant="h6">Local Services</Typography>
+              </AccordionSummary>
+              <AccordionDetails>
+                <Typography>
+                  <strong>Babysitters:</strong> Local recommendations available upon request.<br/>
+                  <strong>Pet Sitters:</strong> Rover.com, local pet care agencies.<br/>
+                  <strong>Boat/Kayak Rentals:</strong> Jersey Boat Rentals, Brick Kayak Company.<br/>
+                  <strong>Fishing Charters:</strong> Reel Life Charters, Jersey Shore Guide Service.<br/>
+                  <strong>Cleaning Services:</strong> Brick Cleaning Pros, Maid Brigade.<br/>
+                  <a href="https://www.rover.com/" target="_blank" rel="noopener">Find a Pet Sitter</a>
+                </Typography>
+              </AccordionDetails>
+            </Accordion>
+
+            {/* Weather & Tides */}
+            <Accordion id="weather">
+              <AccordionSummary expandIcon={<span>🌦️</span>}>
+                <Typography variant="h6">Weather & Tides</Typography>
+              </AccordionSummary>
+              <AccordionDetails>
+                <WeatherWidget />
+                <Typography sx={{ mt: 2 }}>
+                  <strong>Tide Charts:</strong> <a href="https://www.tideschart.com/United-States/New-Jersey/Ocean-County/Barnegat-Bay/" target="_blank" rel="noopener">Barnegat Bay Tides</a><br/>
+                  <strong>Surf Report:</strong> <a href="https://www.surfline.com/surf-report/point-pleasant-nj/5842041f4e65fad6a77088e5" target="_blank" rel="noopener">Surfline Point Pleasant</a>
+                </Typography>
+              </AccordionDetails>
+            </Accordion>
+
+            {/* Insider Tips */}
+            <Accordion id="tips">
+              <AccordionSummary expandIcon={<span>💡</span>}>
+                <Typography variant="h6">Insider Tips</Typography>
+              </AccordionSummary>
+              <AccordionDetails>
+                <Typography>
+                  <ul>
+                    <li><strong>Best Sunset Spot:</strong> Dock at 125 Shore Dr or Windward Beach Park.</li>
+                    <li><strong>Quietest Beach Time:</strong> Early mornings at Brick Beach 1.</li>
+                    <li><strong>Hidden Gem:</strong> Kayak to the sandbar off Windward Beach Park.</li>
+                    <li><strong>Best Crabbing:</strong> Use chicken necks for bait, check traps often.</li>
+                    <li><strong>Rainy Day:</strong> Jenkinson’s Aquarium, Ocean County Mall, Escape Room Toms River.</li>
+                  </ul>
+                </Typography>
+              </AccordionDetails>
+            </Accordion>
+
+            {/* FAQs */}
+            <Accordion id="faqs">
+              <AccordionSummary expandIcon={<span>❓</span>}>
+                <Typography variant="h6">FAQs</Typography>
+              </AccordionSummary>
+              <AccordionDetails>
+                <Typography>
+                  <ul>
+                    <li><strong>Trash Pickup:</strong> Monday & Thursday (put bins out by 7am).</li>
+                    <li><strong>Recycling:</strong> Thursday (blue bin).</li>
+                    <li><strong>Grill:</strong> Propane tank in shed, turn off after use.</li>
+                    <li><strong>WiFi:</strong> Network: BeachHouse125, Password: ask owner.</li>
+                    <li><strong>Check-out:</strong> Please leave keys on kitchen counter.</li>
+                  </ul>
+                </Typography>
+              </AccordionDetails>
+            </Accordion>
+
+            {/* House Manual */}
+            <Accordion id="manual">
+              <AccordionSummary expandIcon={<span>📖</span>}>
+                <Typography variant="h6">House Manual</Typography>
+              </AccordionSummary>
+              <AccordionDetails>
+                <HouseManual />
+              </AccordionDetails>
+            </Accordion>
+
+            {/* Safety & Rules */}
+            <Accordion id="safety">
+              <AccordionSummary expandIcon={<span>🚨</span>}>
+                <Typography variant="h6">Safety & Local Rules</Typography>
+              </AccordionSummary>
+              <AccordionDetails>
+                <Typography>
+                  <ul>
+                    <li><strong>Beach Rules:</strong> No alcohol, no fires, no glass containers, no dogs in summer.</li>
+                    <li><strong>Fireworks:</strong> Only permitted on July 4th at designated locations.</li>
+                    <li><strong>Noise Ordinance:</strong> Quiet hours: 10pm–7am.</li>
+                    <li><strong>Pet Policy:</strong> Dogs allowed on bay beach off-season; check for leash laws.</li>
+                  </ul>
+                  <a href="https://www.bricktownship.net/ordinances/" target="_blank" rel="noopener">Town Ordinances</a>
+                </Typography>
+              </AccordionDetails>
+            </Accordion>
+
+            {/* Interactive Map */}
+            <Accordion id="map">
+              <AccordionSummary expandIcon={<span>🗺️</span>}>
+                <Typography variant="h6">Interactive Map</Typography>
+              </AccordionSummary>
+              <AccordionDetails>
+                <Map />
+                <Typography sx={{ mt: 2 }}>
+                  Click markers to see info on beaches, restaurants, and attractions.
+                </Typography>
+              </AccordionDetails>
+            </Accordion>
+
+            {/* Guestbook */}
+            <Accordion id="guestbook">
+              <AccordionSummary expandIcon={<span>📝</span>}>
+                <Typography variant="h6">Guestbook</Typography>
+              </AccordionSummary>
+              <AccordionDetails>
+                <Guestbook />
+                <Typography sx={{ mt: 2 }}>
+                  Share your favorite memories, tips, and reviews for future guests!
+                </Typography>
+              </AccordionDetails>
+            </Accordion>
+
+            {/* Feedback Form */}
+            <Accordion id="feedback">
+              <AccordionSummary expandIcon={<span>💬</span>}>
+                <Typography variant="h6">Feedback & Suggestions</Typography>
+              </AccordionSummary>
+              <AccordionDetails>
+                <Typography>
+                  Have a suggestion or question? Email us at <a href="mailto:owner@beachhouse.com">owner@beachhouse.com</a> or leave a note in the guestbook!
+                </Typography>
+              </AccordionDetails>
+            </Accordion>
+
+            {/* Seasonal & Thematic Guides */}
+            <Accordion id="seasonal">
+              <AccordionSummary expandIcon={<span>🌻</span>}>
+                <Typography variant="h6">Seasonal & Thematic Guides</Typography>
+              </AccordionSummary>
+              <AccordionDetails>
+                <Typography>
+                  <strong>Spring/Summer:</strong> Kayaking, paddleboarding, outdoor concerts, farmers markets.<br/>
+                  <strong>Fall:</strong> Pumpkin picking, hiking at Allaire State Park, Harvest Fest.<br/>
+                  <strong>Winter:</strong> Holiday lights, ice skating, cozy cafes.<br/>
+                  <strong>Rainy Day:</strong> Jenkinson’s Aquarium, arcades, movie theaters.<br/>
+                  <strong>Family & Kids:</strong> Mini-golf, playgrounds, splash pads.<br/>
+                  <strong>Dog-Friendly:</strong> Windward Beach Park (off-season), BringFido listings.
+                </Typography>
+              </AccordionDetails>
+            </Accordion>
+
+            {/* Visuals & Links */}
+            <Accordion id="visuals">
+              <AccordionSummary expandIcon={<span>📸</span>}>
+                <Typography variant="h6">Photos & Useful Links</Typography>
+              </AccordionSummary>
+              <AccordionDetails>
+                <Gallery />
+                <Typography sx={{ mt: 2 }}>
+                  <a href="https://www.bricktownship.net/" target="_blank" rel="noopener">Town Website</a> | 
+                  <a href="https://www.facebook.com/BrickTownship/" target="_blank" rel="noopener">Facebook</a> | 
+                  <a href="https://www.app.com/news/ocean/brick/" target="_blank" rel="noopener">Local News</a>
+                </Typography>
+              </AccordionDetails>
+            </Accordion>
+          </Box>
+        
           <Typography variant="h4" gutterBottom>
             Local Information
           </Typography>
