@@ -37,6 +37,7 @@ import Guestbook from './components/Guestbook';
 import EmergencyInfo from './components/EmergencyInfo';
 import HouseManual from './components/HouseManual';
 import DarkModeToggle from './components/DarkModeToggle';
+import CrabbingSection from './components/CrabbingSection';
 import './App.css';
 
 // Create a custom theme with beach colors
@@ -239,6 +240,9 @@ function App() {
           </Typography>
 
           {/* Award-winning new features start here */}
+          <Box sx={{ my: 4 }}>
+            <CrabbingSection />
+          </Box>
           <Box sx={{ my: 4 }}>
             <WeatherWidget />
           </Box>
