@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { 
   Box, 
   Typography, 
@@ -40,6 +40,10 @@ function a11yProps(index) {
 }
 
 export default function DiningSection() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const [tabValue, setTabValue] = useState(0);
 
   const handleTabChange = (event, newValue) => {
