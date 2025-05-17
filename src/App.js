@@ -406,6 +406,42 @@ function App() {
           </Box>
         </TabPanel>
 
+        <TabPanel value={tabValue} index={2}>
+          <Typography variant="h4" gutterBottom>
+            🍽️ Dining in Brick: Local Favorites & Waterfront Gems
+          </Typography>
+          <Typography paragraph>
+            Brick Township offers a diverse dining scene—enjoy everything from fresh seafood and waterfront views to classic Italian, hearty breakfasts, and family-friendly favorites. Here are some of the best spots, plus tips for every taste and occasion.
+          </Typography>
+          <Box sx={{ my: 3 }}>
+            <Typography variant="h5" gutterBottom>Top Picks & Local Classics</Typography>
+            <ul>
+              <li><strong>Beacon 70:</strong> Modern sports bar and grill on the water. Great for groups, outdoor seating, big menu, and lively vibe. <a href="https://www.yelp.com/biz/beacon-70-brick" target="_blank" rel="noopener">Yelp</a></li>
+              <li><strong>River Rock Restaurant & Marina Bar:</strong> Waterfront dining with a tiki bar, live music, and a big outdoor deck. <a href="https://www.tripadvisor.com/Restaurant_Review-g46321-d2316813-Reviews-River_Rock_Restaurant_and_Marina_Bar-Brick_New_Jersey.html" target="_blank" rel="noopener">TripAdvisor</a></li>
+              <li><strong>Harpoon Willy’s:</strong> Friendly, casual seafood with spectacular river views and live music. <a href="https://www.opentable.com/r/harpoon-willys-manahawkin" target="_blank" rel="noopener">OpenTable</a></li>
+              <li><strong>Cordi’s Italian Gourmet:</strong> Family-owned Italian, steak, and seafood—upscale atmosphere, gluten-free options. <a href="https://wanderlog.com/list/geoCategory/204544/where-to-eat-best-restaurants-in-brick" target="_blank" rel="noopener">See more</a></li>
+              <li><strong>Manera’s Restaurant:</strong> Local favorite for American fare, steaks, and seafood. <a href="https://www.yelp.com/biz/maneras-restaurant-brick" target="_blank" rel="noopener">Yelp</a></li>
+              <li><strong>The Brownstone Pancake Factory:</strong> Famous for creative pancakes, breakfast, and brunch. Fun for families! <a href="https://www.yelp.com/biz/the-brownstone-pancake-factory-brick" target="_blank" rel="noopener">Yelp</a></li>
+              <li><strong>Taylor Sam’s:</strong> Classic breakfast and lunch spot with a local vibe. <a href="https://www.yelp.com/biz/taylor-sams-brick" target="_blank" rel="noopener">Yelp</a></li>
+              <li><strong>Tacos Los Compas:</strong> Authentic Mexican, highly rated for takeout and casual dining. <a href="https://www.yelp.com/biz/tacos-los-compas-brick" target="_blank" rel="noopener">Yelp</a></li>
+            </ul>
+            <Typography variant="h5" gutterBottom>Waterfront & Outdoor Dining</Typography>
+            <ul>
+              <li>Many restaurants offer decks, patios, or marina views—perfect for sunset dinners or cocktails by the water.</li>
+            </ul>
+            <Typography variant="h5" gutterBottom>Family & Dog-Friendly Options</Typography>
+            <ul>
+              <li>Most spots welcome families and kids. For dog-friendly patios, check listings on <a href="https://www.bringfido.com/restaurant/city/brick-nj-us/" target="_blank" rel="noopener">BringFido</a>.</li>
+            </ul>
+            <Typography variant="h5" gutterBottom>Tips & Resources</Typography>
+            <ul>
+              <li>Reservations recommended for waterfront and popular spots, especially in summer.</li>
+              <li>Many offer takeout and delivery—great for beach picnics or boat days.</li>
+              <li>See more reviews and photos: <a href="https://www.tripadvisor.com/Restaurants-g46321-Brick_New_Jersey.html" target="_blank" rel="noopener">TripAdvisor: Brick Restaurants</a></li>
+            </ul>
+          </Box>
+        </TabPanel>
+
         <TabPanel value={tabValue} index={3}>
           <Typography variant="h4" gutterBottom>
             Local Information
